@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
+.hand#hour {
+    --h: 95px;
+    --w: 6px;
+}
+
+.hand#min {
+    --h: 105px;
+    --w: 5px;
+}
+
+.hand#sec {
+    --h: 115px;
+    --w: 3px;
+}
+
 body {
     display: flex;
     align-items: center;
@@ -29,6 +44,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .clock::before {
     content: "";
     position: absolute;
@@ -68,10 +84,24 @@ body {
     border-radius: 10px;
 }
 
+
+
 @media screen and (max-width: 400px) {
     .clock {
         height: 200px;
         width: 200px;
+    }
+
+    .hand#hour {
+        --h: 60px;
+    }
+
+    .hand#min {
+        --h: 70px;
+    }
+    
+    .hand#sec {
+        --h: 75px;
     }
 
 }
