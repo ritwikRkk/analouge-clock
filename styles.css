@@ -62,7 +62,7 @@ body {
 
 .hand i {
     position: absolute;
-    width: 5px;
+    width: var(--w);
     height: var(--h);
     background-color: var(--clr);
     border-radius: 10px;
